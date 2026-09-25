@@ -1,0 +1,11 @@
+# dsh-index-tap-bridge —— DSH bundle patch
+#
+# 这是插件的"挂载声明"。DSH 启动时按 bundle 层栈叠加各插件 patch，
+# 本文件把桥接插件插入 web/desktop profile 的配置树。
+#
+# 它必须排在依赖 tapIndex 注入的插件**之前或之后都行** ——
+# 桥接读取的是发射时刻的 webServer.indexTaps，与装载顺序无关。
+
+- insert:
+    - id: dsh-index-tap-bridge
+      name: dsh-index-tap-bridge

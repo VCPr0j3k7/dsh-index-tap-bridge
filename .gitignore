@@ -1,0 +1,6 @@
+node_modules/
+*.log
+
+# 本机排障脚本：内含本机绝对路径，不随仓库发布
+probe-*.mjs
+_*.mjs

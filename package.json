@@ -1,0 +1,51 @@
+{
+  "name": "dsh-index-tap-bridge",
+  "version": "0.1.0",
+  "description": "让依赖 webServer.tapIndex 注入脚本的 DSH 插件在官方 Harness 桌面版里也能生效：把 tapIndex 的 HTML 变换自动翻译成桌面外壳认的结构化注入行（webserver/index-inject）。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "desktop",
+    "compat",
+    "tapindex",
+    "index-inject"
+  ],
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "test/"
+  ],
+  "scripts": {
+    "test": "node test/check.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": "^22.19.0 || >=24"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VCPr0j3k7/dsh-index-tap-bridge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/VCPr0j3k7/dsh-index-tap-bridge/issues"
+  },
+  "homepage": "https://github.com/VCPr0j3k7/dsh-index-tap-bridge#readme",
+  "author": "VCPr0j3k7",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT"
+}
