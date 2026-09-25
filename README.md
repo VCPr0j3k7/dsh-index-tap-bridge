@@ -3,6 +3,8 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 [![Node.js](https://img.shields.io/badge/node-%5E22.19.0%20%7C%7C%20%3E%3D24-339933.svg)](./package.json)
 
+[English](./README.en.md) | **简体中文**
+
 为 DeepSeek Harness (DSH) 提供 `tapIndex` 注入通道的兼容层，使依赖该通道的第三方插件在官方
 Harness 桌面版中同样生效。
 
